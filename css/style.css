@@ -83,6 +83,13 @@ header .tagline-2 {
     margin: 1rem 0rem;
 }
 
+.nav-link--active {
+    background:#ed81a1;
+}
+
+.nav-link--focus {
+    background:#fff;
+}
 
 #main-nav a {
     text-decoration: none;
@@ -174,4 +181,77 @@ header .tagline-2 {
 
 #homepage-content .latest-news li {
     margin-bottom: 0.5rem;
+}
+
+#history-content,
+#members-content {
+    min-height: 80vh;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.history-img {
+    width:50%;
+    text-align:center;
+}
+
+.history-description {
+    width:50%;
+    padding: 0 2rem;
+}
+
+/*MEMBERS PAGE*/
+
+.banner {
+    width: 15rem;
+    border:1px solid #e75480;
+    height: 3rem;
+    text-align:center;
+    font-size: 1.5rem;
+    margin-left:4rem;
+    background:#e75480;
+}
+
+.banner:before {
+    margin-top: 1.9rem;
+    margin-left: -3rem;
+    border-right: 2rem solid #d11d53;
+    content: "";
+    float: left;
+    width: 2rem;
+    background-color: #e75480;
+    z-index: -1;
+    position: relative;
+    border-left: 1rem solid rgb(255, 245, 245);
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    z-index: -1;
+}
+
+.banner:after {
+    margin-top: 1.9rem;
+    margin-right: -3rem;
+    border-left: 2rem solid #d11d53;
+    content: "";
+    float: right;
+    width: 2rem;
+    background-color: #e75480;
+    z-index: -1;
+    position: relative;
+    border-right: 1rem solid rgb(255, 245, 245);
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    z-index: -1;
+}
+
+.person {
+    padding: 2rem 1rem;
+}
+
+.person-description {
+    padding-left: 1rem;
 }
