@@ -255,3 +255,29 @@ header .tagline-2 {
 .person-description {
     padding-left: 1rem;
 }
+
+/*SERVICES PAGE*/
+
+.service-type--title,
+.service-way--title {
+    text-align:center;
+    color: #ed81a1;
+    font-weight: 400;
+}
+
+.service-type--list,
+.service-way--list {
+    list-style: none;
+    padding: 1rem 5rem;
+}
+
+.service-type--list li,
+.service-way--list li {
+    margin-bottom: 1rem;
+}
+
+.service-type--list ol,
+.service-way--list ol {
+    padding: 1rem 5rem;
+    list-style: none;
+}
