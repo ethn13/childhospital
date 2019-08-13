@@ -27,7 +27,7 @@
         <div>
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="history.html" class="nav-link nav-link--history nav-link--active">
+                    <a href="history.html" class="nav-link nav-link--history">
                         <i class="fas fa-history"></i>
                         歷史沿革
                     </a>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link nav-link--service">
+                    <a href="services.html" class="nav-link nav-link--service nav-link--active">
                         <i class="fas fa-notes-medical"></i>
                         臨床服務
                     </a>
@@ -162,17 +162,21 @@
         </div>
     </div>
     <!--CONTENT-->
-    <section id="history-content">
+    <section id="clinical-service-content">
         <div class="container">
             <div class="flex-container">
-                <div class="history-img">
-                    <img src="img/history.jpg" alt="" width="80%">
+                <div class="clinical-service-img">
+                    <img src="img/clinical-service.jpg" alt="" width="80%">
                 </div>
-                <div class="history-description">
+                <div class="clinical-service-paragraphs">
                     <p>
-                            兒童心智科是在1993年4月長庚兒童醫院成立之初即設立，由於沈晟醫師對兒童青少年精神醫學學有專長，因此負起規劃兒童心智科的重責大任，於林口開設門診服務，為本科創科主任。
-                            隨著業務的急速擴展，於1994年7月成立日間照護中心，提供自閉症病童完整的治療，由吳佑佑醫師接任兒童心智科主任，為目前國內最大的自閉症日間照護中心，每週服務病童數逾百人。
-                           陸續又有張學岭醫師、王維蒂醫師、黃玉書醫師、黃雅芬醫師、梁歆宜醫師、黃琦棻醫師的加入，以及臨床心理師 與社工師，組成兒童心智科醫療團隊。
+                        &nbsp;&nbsp;&nbsp;&nbsp;兒童青少年精神醫學在整個醫學領域裡是新的一員，它介於成人精神醫學及小兒科學之間，並結合心理學、精神學、人類行為科學及特殊教育學等科學，可說是涵蓋極廣的一門科學。
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;六十年代之前的兒童青少年精神醫學著重兒童之個別心理治療，其理論基礎為精神分析學派。六十年代之後，流行病學研究及行為科學的進步（包括心理、社會、文化、人類），使兒童青少年精神醫學之治療面擴大，開始涵蓋家庭、學校及社區的處置。
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;近二十年來，遺傳學、生理學及生物化學的進步，使醫界對兒童精神疾病的了解及治療都有更大的進展，在治療上也趨向更多元化、更精緻化。
                     </p>
                 </div>
             </div>
@@ -184,7 +188,6 @@
     <footer>
         <span>Copyright &copy; 長庚兒童心智科</span>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -201,7 +204,7 @@
         navLinkCommunity: document.querySelector('.nav-link--community, .nav-link--community *'),
         navLinkHealth: document.querySelector('.nav-link--health, .nav-link--health *'),
         homeContent: document.querySelector('#homepage-content'),
-        historyContent: document.querySelector('#history-content'),
+        servicesContent: document.querySelector('#clinical-service-content'),
         header: document.querySelector('header')
     }
 
@@ -218,7 +221,7 @@
         })
 
 
-        elements.historyContent.addEventListener('mouseover', e => {
+        elements.servicesContent.addEventListener('mouseover', e => {
             e.preventDefault();
             elements.dropdownService.style.display = 'none';
             elements.dropdownEducation.style.display = 'none';

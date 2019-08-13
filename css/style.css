@@ -183,10 +183,8 @@ header .tagline-2 {
     margin-bottom: 0.5rem;
 }
 
-#history-content,
-#members-content {
-    min-height: 80vh;
-}
+/*HISTORY PAGE*/
+
 
 .flex-container {
     display:flex;
@@ -205,6 +203,8 @@ header .tagline-2 {
 }
 
 /*MEMBERS PAGE*/
+
+
 
 .banner {
     width: 15rem;
@@ -280,4 +280,58 @@ header .tagline-2 {
 .service-way--list ol {
     padding: 1rem 5rem;
     list-style: none;
+}
+
+/*SERVICES TIME PAGE*/
+
+.table-1 table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-1 table {
+    margin-bottom: 1rem;
+}
+
+.table-1 .banner{
+    margin: 2.5rem auto;
+}
+
+
+.table-1 td {
+    min-width: 6rem;
+    text-align: center;
+}
+
+.table-1 table {
+    border-collapse: collapse;
+}
+
+
+.table-1 .header-row,
+.table-1 .header-row td {
+    border: none;
+}
+
+#services-time-content {
+    margin-bottom: 2rem;
+}
+
+/*CLINICAL SERVICE PAGE*/
+
+.clinical-service-img {
+    width: 50%;
+}
+
+.clinical-service-paragraphs {
+    width: 50%;
+    padding: 0 2rem;
+}
+
+/*FOOTER*/
+
+footer {
+    background: #e75480;
+    text-align: center;
+    padding: 1rem 0;
 }
