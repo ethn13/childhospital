@@ -320,11 +320,12 @@ header .tagline-2 {
 /*CLINICAL SERVICE PAGE*/
 
 .clinical-service-img {
-    width: 50%;
+    width:50%;
+    text-align:center;
 }
 
 .clinical-service-paragraphs {
-    width: 50%;
+    width:50%;
     padding: 0 2rem;
 }
 
@@ -334,4 +335,74 @@ footer {
     background: #e75480;
     text-align: center;
     padding: 1rem 0;
+}
+
+/*CARE-CENTER PAGE (日間照護中心)*/
+
+.care-center--lists {
+    padding-left:10%;
+    padding-right:10%;
+}
+
+
+#care-center-content table{
+    border-collapse: collapse;
+}
+
+#care-center-content li {
+    padding: 0.5rem;
+}
+
+#care-center-content td {
+    padding: 0.5rem;
+}
+
+/*PUBLICATION PAGE*/
+
+#publication-content .author {
+    padding-left:10%;
+    padding-right: 10%;
+}
+
+#publication-content ol {
+    padding-left:2rem;
+}
+
+.author {
+    margin-bottom: 1rem;
+}
+
+.author h3 {
+    margin-bottom: 1rem;
+    color: #e75480;
+}
+
+.community-img {
+    width:50%;
+    text-align:center;
+}
+
+.community-description {
+    width:50%;
+    padding: 0 2rem;
+}
+
+/*COMMUNITY PAGE*/
+
+.inner-list {
+    padding-left: 3rem;
+    list-style: circle
+}
+
+/*HEALTH PAGE*/
+
+.genre {
+    padding-left:10%;
+    padding-right: 10%;
+    margin-bottom: 1rem;
+}
+
+.genre ul {
+    list-style-type: disc;
+    padding-left: 1rem;
 }

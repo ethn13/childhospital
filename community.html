@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link nav-link--service nav-link--active">
+                    <a href="services.html" class="nav-link nav-link--service">
                         <i class="fas fa-notes-medical"></i>
                         臨床服務
                     </a>
@@ -57,13 +57,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nav-link--community">
+                    <a href="community.html" class="nav-link nav-link--community nav-link--active">
                         <i class="fas fa-hand-holding-heart"></i>
                         社區服務
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nav-link--health">
+                    <a href="health.html" class="nav-link nav-link--health">
                         <i class="fas fa-notes-medical"></i>
                         衛教資訊
                     </a>
@@ -162,22 +162,35 @@
         </div>
     </div>
     <!--CONTENT-->
-    <section id="clinical-service-content">
+    <section id="community-content">
         <div class="container">
             <div class="flex-container">
-                <div class="clinical-service-img">
-                    <img src="img/clinical-service.jpg" alt="" width="80%">
+                <div class="community-img">
+                    <img src="img/community.jpg" alt="" width="80%">
                 </div>
-                <div class="clinical-service-paragraphs">
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;兒童青少年精神醫學在整個醫學領域裡是新的一員，它介於成人精神醫學及小兒科學之間，並結合心理學、精神學、人類行為科學及特殊教育學等科學，可說是涵蓋極廣的一門科學。
-                    </p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;六十年代之前的兒童青少年精神醫學著重兒童之個別心理治療，其理論基礎為精神分析學派。六十年代之後，流行病學研究及行為科學的進步（包括心理、社會、文化、人類），使兒童青少年精神醫學之治療面擴大，開始涵蓋家庭、學校及社區的處置。
-                    </p>
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;近二十年來，遺傳學、生理學及生物化學的進步，使醫界對兒童精神疾病的了解及治療都有更大的進展，在治療上也趨向更多元化、更精緻化。
-                    </p>
+                <div class="community-description">
+                    <ul>
+                        <li>一、 固定參與之社區醫療工作，如: 
+                            <ul class="inner-list">
+                                <li>擔任達仁女中輔導室督導</li>
+                                <li>勵馨基金會顧問</li>
+                                <li>台北市社會局兒保科顧問</li>
+                                <li>國立林口高中諮商輔導</li>
+                                <li>林口啟智學校特約門診</li>
+                                <li>長庚技術學院特約門診</li>
+                                <li>基隆海洋大學諮商輔導</li>
+                            </ul>
+                        </li>
+                        <li>二、其他相關社區醫療工作，如：
+                            <ul class="inner-list">
+                                <li>擔任基隆縣市、台北縣市、桃園縣市、新竹縣市國小、國中、高中教師在職訓練教育研習會講師</li>
+                                <li>擔任相關基金會（如自閉症基金會、婦聯會、聽障文教基金會）、自助性團體（如過動兒協會、學習障礙協會、自閉症家長協會）、社會福利機構等之專業人員訓練班及工作研習會講師與督導</li>
+                                <li>參與學校及社區之心理衛生講座</li>
+                                <li>不定期至育幼院提供院童之心理治療與心智評估</li>
+                                <li>參與921震災之心理復健工作</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -188,6 +201,7 @@
     <footer>
         <span>Copyright &copy; 長庚兒童心智科</span>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -204,7 +218,7 @@
         navLinkCommunity: document.querySelector('.nav-link--community, .nav-link--community *'),
         navLinkHealth: document.querySelector('.nav-link--health, .nav-link--health *'),
         homeContent: document.querySelector('#homepage-content'),
-        servicesContent: document.querySelector('#clinical-service-content'),
+        communityContent: document.querySelector('#community-content'),
         header: document.querySelector('header')
     }
 
@@ -221,7 +235,7 @@
         })
 
 
-        elements.servicesContent.addEventListener('mouseover', e => {
+        elements.communityContent.addEventListener('mouseover', e => {
             e.preventDefault();
             elements.dropdownService.style.display = 'none';
             elements.dropdownEducation.style.display = 'none';
