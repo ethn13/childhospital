@@ -594,7 +594,9 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+
+    /*TEST!!!!!!!*/
     * {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
