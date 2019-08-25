@@ -585,3 +585,9 @@ footer {
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 10px;
+    }
+}
