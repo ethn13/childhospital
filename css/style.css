@@ -34,23 +34,34 @@ a:hover {
 }
 
 header {
-    padding:1rem;
     background:#fff;
 }
 
 .header-container {
     display:flex;
     flex-direction: row;
+    padding:1rem;
 }
 
 header .logo {
     margin-right:2rem;
+    
+}
+
+header .logo img {
+    height: 7.96rem;
 }
 
 header .taglines {
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+
+header .tagline-0 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #d11d53;
 }
 
 header .tagline-1 {
@@ -67,20 +78,27 @@ header .tagline-2 {
 #main-nav {
     background:#FFCBD3;
     padding-right:1rem;
+    padding-left: 1rem;
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
 }
 
-#main-nav ul {
+.nav-list {
     display:inline-flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left:15px;
     list-style: none;
 }
 
 #main-nav li {
     display: inline-block;
     margin: 1rem 0rem;
+}
+
+.nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .nav-link--active {
@@ -106,7 +124,7 @@ header .tagline-2 {
 
 .drop-down-menu-service,
 .drop-down-menu-education {
-    margin-left: 15px;
+    margin-left: 1rem;
     color:#ababab;
     background:#fff;
     display: none;
@@ -120,7 +138,8 @@ header .tagline-2 {
 
 
 
-.drop-down-menu-service .row{
+.drop-down-menu-service .row,
+.drop-down-menu-education .row{
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -143,7 +162,6 @@ header .tagline-2 {
 
 #homepage-content {
     width: 100%;
-    height:600px;
 }
 
 .drop-down-menu-education {
@@ -169,6 +187,15 @@ header .tagline-2 {
 #homepage-content .glide {
     width:60%;
 }
+
+.glide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* .child-picture {
+    margin-top: 5rem;
+} */
 
 #homepage-content .latest-news {
     width: 40%;
@@ -212,7 +239,8 @@ header .tagline-2 {
     height: 3rem;
     text-align:center;
     font-size: 1.5rem;
-    margin-left:4rem;
+    margin-left:auto;
+    margin-right: auto;
     background:#e75480;
 }
 
@@ -249,11 +277,87 @@ header .tagline-2 {
 }
 
 .person {
-    padding: 2rem 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.doctor-1,
+.doctor-3,
+.doctor-5,
+.doctor-7 {
+    background: url('../img/person.jpg');
+}
+
+.doctor-2,
+.doctor-4,
+.doctor-6,
+.doctor-8 {
+    background: url('../img/person-1.jpg');
+}
+
+.psy-1,
+.psy-3,
+.psy-5,
+.psy-7,
+.psy-9,
+.psy-11,
+.psy-13 {
+    background: url('../img/person.jpg');
+}
+
+.psy-2,
+.psy-4,
+.psy-6,
+.psy-8,
+.psy-10,
+.psy-12 {
+    background: url('../img/person-1.jpg');
+}
+
+.sworker-1 {
+    background: url('../img/person.jpg');
+}
+
+.image {
+    min-height: 200px;
+    background-size: cover;
+}
+
+
+
+.dark-overlay {
+    display: none;
+}
+
+.image:hover > .dark-overlay {
+    background: rgb(0,0,0, 0.5);
+    width: 100%;
+    min-height: 200px;
+    display: block;
+    color: #fff;
+}
+
+.person__list {
+    padding: 2.5rem;
+    text-align: left;
 }
 
 .person-description {
     padding-left: 1rem;
+}
+
+.persons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto);
+} 
+
+.persons-one-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(200px, auto);
 }
 
 /*SERVICES PAGE*/
@@ -405,4 +509,79 @@ footer {
 .genre ul {
     list-style-type: disc;
     padding-left: 1rem;
+}
+
+@media screen and (min-width: 1600px) {
+    * {
+        font-size: 20px;
+    }
+
+    #main-nav {
+        justify-content: center;
+    }
+
+    #homepage-content .container {
+        justify-content: center;
+    }
+
+    .header-container {
+        justify-content: center;
+    }
+
+    .drop-down-menu-service .row,
+    .drop-down-menu-education .row{
+        justify-content: center;
+    }
+
+    .image{
+        min-height: 400px;
+    }
+
+    .image:hover > .dark-overlay {
+        min-height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+    * {
+        font-size: 22px;
+    }
+
+    .child-picture {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .persons,
+    .persons-one-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    * {
+        font-size: 14px;
+    }
+
+    .child-picture {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .persons,
+    .persons-one-row {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    * {
+        font-size: 12px;
+    }
 }
