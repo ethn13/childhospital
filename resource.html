@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet"  href="css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>長庚醫院兒童心智科</title>
 </head>
@@ -39,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link nav-link--service nav-link--active">
+                    <a href="services.html" class="nav-link nav-link--service">
                         <i class="fas fa-notes-medical"></i>
                         臨床服務
                     </a>
@@ -106,7 +111,7 @@
                         <a href="services-time.html">門診時間表</a>
                     </li>
                     <li>
-                        <a href="clinical-service.html">門診服務內容</a>
+                        <a href="#">門診服務內容</a>
                     </li>
                 </ul>
             </div>
@@ -167,49 +172,17 @@
             </div>
         </div>
     </div>
-    <!--CONTENT-->
-    <section id="services-content">
+    <!--主頁內容-->
+    <section id="resource-content">
         <div class="container">
-            <div class="service-type">
-                <h1 class="service-type--title">本科服務方式</h1>
-                <ol class="service-type--list">
-                    <li>1. 門診診斷：與父母、小朋友會談，對問題之前因後果，父母之態度及處理效果，小朋友的身心發展，家庭、學校…等作全盤瞭解。</li>
-                    <li>2. 配合各種測驗（如智力測驗、發展測驗、注意力測驗、心理測驗、感覺統合測驗）、量表（氣質量表、活動量表）來了解小朋友。</li>
-                    <li>3. 必要的身體、神經學檢查或檢驗。</li>
-                    <li>4. 經正確診斷後，提供各項治療及訓練：
-                        <ol>
-                            <li>(1) 鑑定與諮詢</li>
-                            <li>(2) 個別心理治療</li>
-                            <li>(3) 行為治療</li>
-                            <li>(4) 各種特殊訓練：如語言基本訓練、發展偏差或遲緩的矯治</li>
-                            <li>(5) 家族治療</li>
-                            <li>(6) 團體治療或諮商</li>
-                            <li>(7) 藥物治療</li>
-                            <li>(8) 學校訪視、家庭訪視</li>
-                        </ol>
-                    </li>
-                </ol>
-            </div>
-            <div class="service-way">
-                <h1 class="service-way--title">本科內容</h1>
-                <ol class="service-way--list">
-                    <li>（一）服務對象：未滿十九歲的兒童、青少年及其家屬或監護人</li>
-                    <li>（二）醫療項目：
-                        <ol>
-                            <li>1. 發展遲緩：如智能不足、語言發展障礙等</li>
-                            <li>2. 幼兒自閉症</li>
-                            <li>3. 注意力不足、過動症活動量大、衝動、注意力不集中、上課不專心等</li>
-                            <li>4. 精神病</li>
-                            <li>5. 行為問題：如異食癖、手淫、咬指甲、破壞或自傷行為等</li>
-                            <li>6. 情緒困擾：如分離焦慮、恐懼症等</li>
-                            <li>7. 睡眠障礙：如夜驚、夢遊、磨牙、惡夢等</li>
-                            <li>8. 學習障礙：如閱讀、算術、書寫、學業落後等</li>
-                            <li>9. 資賦優異及殘障問題諮商：了解孩子的能力，轉介合適的訓練，發揮其潛能</li>
-                            <li>10. 受虐兒童青少年心理行為問題諮商</li>
-                        </ol>
-                    </li>
-                </ol>
-            </div>
+            <ul style="text-align: center;">
+                <li>
+                    <h3><a href="https://www1.cgmh.org.tw/intr/intr2/c3360/C3360.htm">1. 林口長庚精神科官網</a></h3>
+                </li>
+                <li>
+                    <h3><a href="https://www1.cgmh.org.tw/suicidelnk/index_suicide.htm">2. 自殺防治中心</a></h3>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -219,106 +192,11 @@
         <span>Copyright &copy; 長庚兒童心智科</span>
     </footer>
 
-
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script>
-    const elements = {
-        dropdownService: document.querySelector('.drop-down-menu-service'),
-        dropdownEducation: document.querySelector('.drop-down-menu-education'),
-        navbarList: document.querySelector('ul.nav-list'),
-        navLinkService: document.querySelector('.nav-link--service, .nav-link--service *'),
-        navLinkHistory: document.querySelector('.nav-link--history, .nav-link--history *'),
-        navLinkTeam: document.querySelector('.nav-link--team, .nav-link--team *'),
-        navLinkEducation: document.querySelector('.nav-link--education, .nav-link--education *'),
-        navLinkPublication: document.querySelector('.nav-link--publication, .nav-link--publication *'),
-        navLinkCommunity: document.querySelector('.nav-link--community, .nav-link--community *'),
-        navLinkHealth: document.querySelector('.nav-link--health, .nav-link--health *'),
-        homeContent: document.querySelector('#homepage-content'),
-        servicesContent: document.querySelector('#services-content'),
-        header: document.querySelector('header')
-    }
-
-    const adjustNavbar = () => {
-        // Adjust navbar submenu width
-        elements.dropdownService.style.width = elements.navbarList.offsetWidth + 'px';
-        elements.dropdownEducation.style.width = elements.navbarList.offsetWidth + 'px';
         
-        // Adjust margin-right
-        elements.dropdownEducation.style.marginLeft = elements.navbarList.offsetLeft + 'px';
-        elements.dropdownService.style.marginLeft = elements.navbarList.offsetLeft + 'px';
-    }
-
-    window.onload = function() {
-        adjustNavbar();
-
-        // display navbar submenus when hover
-        elements.navLinkService.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'block';
-            elements.dropdownEducation.style.display = 'none';
-        })
-
-
-        elements.servicesContent.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        })
-
-        elements.navLinkCommunity.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        })
-
-        elements.navLinkEducation.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'block';
-        })
-
-        elements.navLinkHealth.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        })
-
-        elements.navLinkHistory.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        })
-
-        elements.navLinkPublication.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        })
-
-        elements.navLinkTeam.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        });
-        elements.header.addEventListener('mouseover', e => {
-            e.preventDefault();
-            elements.dropdownService.style.display = 'none';
-            elements.dropdownEducation.style.display = 'none';
-        })
-        const navLinkFocus = (submenu, link) => {
-            submenu.addEventListener('mouseover', e => {
-                link.classList.add('nav-link--focus');
-            });
-            submenu.addEventListener('mouseleave', e => {
-                link.classList.remove('nav-link--focus');
-            })
-        }
-        navLinkFocus(elements.dropdownEducation, elements.navLinkEducation);
-        navLinkFocus(elements.dropdownService, elements.navLinkService);
-    }
-
-    window.addEventListener('resize', adjustNavbar);
     </script>
-</body>
+<script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
